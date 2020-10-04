@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!-- NavBar Section start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-container container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/logo.png" class="navBarLogo" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order List </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Booking </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tickets </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ </a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center ml-3 bg-red">
+              <a class="nav-link" href="#">Logout </a>
+              <span class="material-icons">login</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar Section end -->
+
+    <!-- image section Start-->
+
+    <section class="contactImg">
+      <img src="assets/images/contactHeaserImg.png" alt="" />
+    </section>
+
+    <section class="contactFormWithMap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-7">
+            <div class="mapAddress">
+              <div class="map" id="mapId"></div>
+              <div class="officeAddress">
+                <div class="headOffice mr-md-4 mr-2">
+                  <h3>Head Office</h3>
+                  <p>
+                    10/25 Motijheel C/A,<br />
+                    Dhaka-1200
+                  </p>
+                </div>
+                <div class="vl"></div>
+                <div class="subOffice ml-md-4 ml-2">
+                  <h3>Mirpur Office</h3>
+                  <p>Mirpur 12, C/A, <br />Dhaka 1216, Bangladesh</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
+            <div class="contactForm">
+              <h3 class="getInTouchTitle pb-3">Get in touch</h3>
+              <div class="getInTouchSubtitle pb-2">
+                <p class="subtitle">Have an query or some feedback for us?</p>
+                <p class="subtitle">
+                  Fill out the form below to contact our team
+                </p>
+              </div>
+
+              <form>
+                <div class="form-group">
+                  <label for="getInTouchNameId">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="getInTouchNameId"
+                    placeholder="My Name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="Purpose">Purpose</label>
+                  <select class="form-control" id="Purpose">
+                    <option>Service Details</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <!-- <div class="form-group">
+                  <label for="getInTouchPurposeId">Purpose</label>
+                  <input
+                    type="select"
+                    class="form-control getInTouchPurpose"
+                    id="getInTouchPurposeId"
+                    placeholder="Service details"
+                  />
+                </div> -->
+
+                <div class="form-group">
+                  <label for="getInTouchEmailId">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="getInTouchEmailId"
+                    placeholder="user@email.com"
+                  />
+                </div>
+
+                <div class="form-group ml-auto">
+                  <label for="getInTouchInfoId">Information</label>
+                  <textarea
+                    type="text"
+                    class="form-control"
+                    id="getInTouchInfoId"
+                    rows="3"
+                    placeholder="Hey I would love to talk to you about your services"
+                  ></textarea>
+                </div>
+
+                <!-- buttons -->
+                <div class="">
+                  <div class="text-right btnMain">
+                    <input class="btn" type="button" value="Get In Touch" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer bg-light">
+      <hr />
+      <div class="container px-md-5 px-3">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>GET IN TOUCH</h3>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> location_on </span>
+              <p class="ml-1 text-wrap">
+                Head Office Address:<br />
+                10/25 Motijheel C/A, Dhaka-1200
+              </p>
+            </div>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> textsms </span>
+              <p class="ml-1">info@homexbd.com</p>
+            </div>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> phone_enabled </span>
+              <p class="ml-1">
+                Telephone: 9876767,<br />
+                8797878, 8668677
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>OUR SERVICES</h3>
+
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Logistics </a></li>
+                <li><a href=""> Cargo Transportation </a></li>
+                <li><a href=""> Monthly Pay </a></li>
+                <li><a href=""> Warehousing </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>LEGEL</h3>
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Terms of Use </a></li>
+                <li><a href=""> Privacy Policy </a></li>
+                <li><a href=""> Fraud Prevention </a></li>
+                <li><a href=""> Disclaimer </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>MERCHAINTISE</h3>
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Agency Arrangement </a></li>
+                <li><a href=""> Registration </a></li>
+                <li><a href=""> Processes </a></li>
+                <li><a href=""> FAQ </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid copyright-footer">
+        <p class="text-center mb-0 py-3 font-italic">
+          Homex Courier Service Ltd. All rights reserved
+        </p>
+      </div>
+    </section>
+
+    <!-- image section End-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="assets/js/map.js"></script>
+  </body>
+</html>

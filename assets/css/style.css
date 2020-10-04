@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #b5b5b5;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #00a69c;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  font-size: 13px !important;
+  height: 40px !important;
+  background-color: #eaf3fb !important;
+}
+
+textarea {
+  font-size: 13px !important;
+  background-color: #eaf3fb !important;
+}
+
+.btnMain input {
+  background-color: #00a69c;
+  color: white;
+}
+
+.btnMain input:hover {
+  background-color: #00a69c;
+  color: white;
+}
+
+/* navBar css start */
+
+.navBarLogo {
+  width: 210px;
+}
+
+.menu {
+  font-weight: 550;
+}
+
+.menu a {
+  text-decoration: none;
+  position: relative;
+  padding: 0px 8px;
+  margin: 0px 4px;
+}
+
+.menu a::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  right: 0;
+  top: 35px;
+  pointer-events: none;
+}
+
+.menu a:hover::before {
+  background-color: #00a69c;
+}
+
+.menu .dropdown-item:hover {
+  background-color: transparent;
+}
+
+.menu .dropdown-item:hover::before {
+  background-color: transparent;
+}
+
+.menu a:hover {
+  color: #00a69c !important;
+}
+
+.menu li:last-child a,
+.menu li:last-child a:hover::before,
+.menu li:last-child span {
+  color: red !important;
+  background-color: transparent !important;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 25px 0px;
+}
+
+.menu ul li .active {
+  color: #00a69c !important;
+}
+
+.menu ul li .active::before {
+  background-color: #00a69c !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* navBar css end */
+
+/* contact css start */
+.contactImg img {
+  width: 100%;
+  max-height: 20vh;
+}
+
+.contactFormWithMap {
+  margin: 80px 0px;
+}
+
+.contactFormWithMap .map {
+  height: 350px;
+}
+.officeAddress {
+  margin-top: 20px;
+}
+.headOffice,
+.subOffice,
+.vl {
+  display: inline-block;
+}
+
+.headOffice h3,
+.subOffice h3 {
+  font-size: 14px;
+  font-weight: 550;
+}
+.headOffice p,
+.subOffice p {
+  font-size: 14px;
+}
+
+.vl {
+  border-left: 2px solid gray;
+  height: 48px;
+}
+
+.contactFormWithMap .contactForm {
+  /* max-height: 40vh; */
+  /* height: 40vh; */
+  width: 20.5rem;
+}
+
+.getInTouchTitle {
+  color: black;
+  font-weight: bold;
+}
+
+.getInTouchSubtitle {
+  line-height: 0;
+}
+
+@media (max-width: 768px) {
+  .headOffice h3,
+  .subOffice h3 {
+    font-size: 12px;
+  }
+  .headOffice p,
+  .subOffice p {
+    font-size: 12px;
+  }
+  .contactFormWithMap {
+    margin: 0;
+  }
+
+  .mapAddress,
+  .contactForm {
+    margin-top: 20px;
+  }
+}
+
+/* contact css end */
+
+/* footer section start*/
+
+.footer h3 {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 24px;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+}
+
+.footer span {
+  color: #00a69c;
+  font-size: 24px;
+}
+
+.footer hr {
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 2px solid #00a69c;
+}
+
+.copyright-footer {
+  background-color: #00a69c;
+  color: white;
+}
+
+.copyright-footer p {
+  font-weight: 550;
+  font-size: 14px;
+  color: #f6f6f6;
+}
+
+.footerLinks li {
+  list-style-type: none;
+}
+.footerLinks li a:hover {
+  color: black !important;
+}
+
+.footerLinks li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footerLinks li {
+  line-height: 2;
+}
+/* footer section end*/
