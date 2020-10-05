@@ -17,7 +17,7 @@ label {
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #00a69c;
+  border: 1px solid #00c4b1;
 }
 
 input[type="text"],
@@ -37,12 +37,12 @@ textarea {
 }
 
 .btnMain input {
-  background-color: #00a69c;
+  background-color: #00c4b1;
   color: white;
 }
 
 .btnMain input:hover {
-  background-color: #00a69c;
+  background-color: #00c4b1;
   color: white;
 }
 
@@ -77,7 +77,7 @@ textarea {
 }
 
 .menu a:hover::before {
-  background-color: #00a69c;
+  background-color: #00c4b1;
 }
 
 .menu .dropdown-item:hover {
@@ -88,8 +88,20 @@ textarea {
   background-color: transparent;
 }
 
+a.dropdown-item {
+  font-size: 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: grey;
+}
+
+.dropdown-menu {
+  background-color: aliceblue;
+  margin-top: -12px;
+}
+
 .menu a:hover {
-  color: #00a69c !important;
+  color: #00c4b1 !important;
 }
 
 .menu li:last-child a,
@@ -109,20 +121,444 @@ textarea {
 }
 
 .menu ul li .active {
-  color: #00a69c !important;
+  color: #00c4b1 !important;
 }
 
 .menu ul li .active::before {
-  background-color: #00a69c !important;
+  background-color: #00c4b1 !important;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
+@media (max-width: 769px) {
+  .menu ul li .active::before {
+    background-color: transparent !important;
+  }
+  .menu a:hover::before {
+    background-color: transparent !important;
+  }
+  .menu ul li {
+    padding: 8px 0px;
+  }
+}
+
 /* navBar css end */
 
+.progress-container {
+  margin-top: 60px;
+  margin-left: 60px;
+  width: 600px;
+}
+
+.progress-name {
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.progress-name p {
+  margin: 0;
+}
+
+.progress-frame {
+  margin-top: 16px;
+  width: 100%;
+  height: 20px;
+  background-color: #efefef;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-progress {
+  width: 3%;
+  height: 16px;
+  background-color: #00c4b1;
+  margin: 0px 2px;
+  border-radius: 10px;
+}
+
+#contact-info,
+#business-info,
+#marchent-info {
+  min-height: 430px;
+  position: relative;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 550;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 13px !important;
+  height: 50px !important;
+}
+.submit-btn {
+  margin-top: -26px;
+}
+
+.regContactPersonInfo {
+  height: 50px !important;
+}
+
+.form-section {
+  width: 45vw;
+}
+.signupTitle {
+  color: #00c4b1;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 13px;
+  color: #b5b5b5;
+}
+/* .doubleRowForm {
+  width: 336px;
+  height: 50px;
+} */
+
+/* .form-hello select {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.21) 0%,
+    rgba(51, 51, 51, 0.05) 77%
+  );
+} */
+
+.condition-row {
+  font-family: real-mid;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.condition-row a {
+  text-decoration: none;
+  color: black;
+}
+
+.signupButtonBox {
+  /* position: absolute;
+  bottom: -25px;
+  right: 0; */
+}
+
+.button-back {
+  background-color: #54e6d8;
+}
+
+.btnMain input {
+  background-color: #00c4b1;
+  color: white;
+}
+
+.btnMain input:hover {
+  background-color: #00c4b1;
+  color: white;
+}
+.form-hello {
+  position: relative;
+}
+.icon-hello {
+  position: absolute;
+  right: 40px;
+  top: 46px;
+}
+
+/* select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+} */
+
+.mainbox {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: -1;
+}
+
+.bike-position {
+  /* position: absolute; */
+  /* top: 710px; */
+
+  z-index: -1;
+}
+
+.bike-box {
+  margin-bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.bike-area {
+  width: 70rem;
+  position: relative;
+  padding-top: 235px;
+  z-index: -1;
+}
+
+.bike-area img {
+  position: absolute;
+}
+.bike-bg {
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: 0;
+}
+
+.bike-bike {
+  width: 19%;
+  height: auto;
+  bottom: 0%;
+  left: 6%;
+}
+
+/* .singleRowForm {
+  width: 97%;
+  height: 50px;
+} */
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mar-top {
+  margin-top: 10px;
+}
+
+/* .mar-row-bottom {
+  margin-bottom: 10px;
+} */
+
+/* .singleRowBM {
+  margin-bottom: 20px;
+} */
+
+/* animation */
+.display-none {
+  display: none;
+}
+
+@-webkit-keyframes kf-progress-50-p {
+  from {
+    width: 3%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes kf-progress-50-p {
+  from {
+    width: 3%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@-webkit-keyframes kf-progress-100-p {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes kf-progress-100-p {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes kf-progress-50-p-back {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 3%;
+  }
+}
+
+@keyframes kf-progress-50-p-back {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 3%;
+  }
+}
+
+@-webkit-keyframes kf-progress-100-p-back {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes kf-progress-100-p-back {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/* bike animation */
+@-webkit-keyframes kf-bike-50-p {
+  from {
+    left: 6%;
+  }
+  to {
+    left: 39%;
+  }
+}
+@keyframes kf-bike-50-p {
+  from {
+    left: 6%;
+  }
+  to {
+    left: 39%;
+  }
+}
+
+@-webkit-keyframes kf-bike-100-p {
+  from {
+    left: 39%;
+  }
+  to {
+    left: 71%;
+  }
+}
+
+@keyframes kf-bike-100-p {
+  from {
+    left: 39%;
+  }
+  to {
+    left: 71%;
+  }
+}
+
+@-webkit-keyframes kf-bike-50-p-back {
+  from {
+    left: 39%;
+  }
+  to {
+    left: 6%;
+  }
+}
+
+@keyframes kf-bike-50-p-back {
+  from {
+    left: 39%;
+  }
+  to {
+    left: 6%;
+  }
+}
+
+@-webkit-keyframes kf-bike-100-p-back {
+  from {
+    left: 71%;
+  }
+  to {
+    left: 39%;
+  }
+}
+
+@keyframes kf-bike-100-p-back {
+  from {
+    left: 71%;
+  }
+  to {
+    left: 39%;
+  }
+}
+
+@media (max-width: 1050px) {
+  /* .logo {
+    margin: 25px 0;
+  } */
+  .progress-container {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 0;
+  }
+  .form-section {
+    width: 70vw;
+  }
+  .bike-box {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .progress-name {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .doubleRowForm,
+  .singleRowForm {
+    width: 100%;
+  } */
+  #contact-info,
+  #business-info,
+  #marchent-info {
+    position: relative;
+  }
+
+  .form-section {
+    width: 95vw;
+  }
+
+  /* .mar-row-bottom {
+    margin-bottom: 0;
+  } */
+
+  /* .singleRowBM {
+    margin-bottom: 10px;
+  } */
+
+  .submit-btn {
+    margin-top: 10px;
+  }
+
+  .bike-position {
+    margin-top: -100px;
+  }
+}
+
+/* reg css end */
+
 /* contact css start */
+
 .contactImg img {
   width: 100%;
   max-height: 20vh;
@@ -135,6 +571,14 @@ textarea {
 .contactFormWithMap .map {
   height: 350px;
 }
+.getInTouchSubtitle {
+  margin-bottom: 10px;
+}
+
+.getInTouchSubtitle .subtitle {
+  margin-bottom: 0;
+}
+
 .officeAddress {
   margin-top: 20px;
 }
@@ -159,26 +603,22 @@ textarea {
   height: 48px;
 }
 
-.contactFormWithMap .contactForm {
-  /* max-height: 40vh; */
-  /* height: 40vh; */
-  width: 20.5rem;
-}
-
 .getInTouchTitle {
   color: black;
   font-weight: bold;
 }
 
-.getInTouchSubtitle {
-  line-height: 0;
+h3.getInTouchTitle.pb-3 {
+  margin-top: -5px;
 }
+
+/* .getInTouchSubtitle {
+  line-height: 0;
+} */
 
 @media (max-width: 768px) {
   .headOffice h3,
-  .subOffice h3 {
-    font-size: 12px;
-  }
+  .subOffice h3,
   .headOffice p,
   .subOffice p {
     font-size: 12px;
@@ -209,18 +649,18 @@ textarea {
 }
 
 .footer span {
-  color: #00a69c;
+  color: #00c4b1;
   font-size: 24px;
 }
 
 .footer hr {
   margin-bottom: 2rem;
   border: 0;
-  border-top: 2px solid #00a69c;
+  border-top: 2px solid #00c4b1;
 }
 
 .copyright-footer {
-  background-color: #00a69c;
+  background-color: #00c4b1;
   color: white;
 }
 

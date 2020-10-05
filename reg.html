@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0ba748931a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="assets/css/reg.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Mercent Registration!</title>
+  </head>
+  <body>
+    <!-- NavBar Section start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="nav-container container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/logo.png" class="navBarLogo" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Order List </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Booking </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tickets </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ </a>
+            </li>
+
+            <li class="nav-item d-flex align-items-center ml-3 bg-red">
+              <a class="nav-link" href="#">Logout </a>
+              <span class="material-icons">login</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar Section end -->
+
+    <section class="container-fluid">
+      <div class="row">
+        <!-- <div
+          class="col-md-3 ml-1 col-12 d-flex align-items-center justify-content-md-start justify-content-center"
+        >
+          <div class="logo">
+            <img src="https://i.imgur.com/z1KgI6j.png" alt="" />
+            <img src="assets/images/logo.png" alt="" />
+          </div>
+        </div> -->
+        <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center">
+          <div class="progress-container">
+            <div class="progress-name d-flex justify-content-between">
+              <p>Merchant Details</p>
+              <p>Business Details</p>
+              <p>Contact Details</p>
+            </div>
+            <div class="progress-frame">
+              <div id="progress" class="progress-progress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="row">
+        <div
+          class="form-container container col-12 col-sm-12 col-md-12 d-flex justify-content-center mt-5"
+        >
+          <!-- Merchant information start -->
+          <form action="">
+            <div id="marchent-info" class="form-section">
+              <h3 class="signupTitle">Merchant information</h3>
+              <p class="subtitle">Details about you</p>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="merchantName">Full Name *</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="merchantName"
+                    placeholder="e.g: Full Name"
+                  />
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="merchantNid">National ID *</label>
+                  <input
+                    type="text"
+                    id="merchantNid"
+                    class="form-control mr-5"
+                    placeholder="e.g: XXXXXXXXXX"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="merchantEmail">Email address *</label>
+                  <input
+                    type="email"
+                    id="merchantEmail"
+                    class="form-control"
+                    placeholder="e.g: user@email.com"
+                  />
+                </div>
+
+                <div class="col-md-6 col-12 mb20">
+                  <label for="merchantMobile">Mobile number *</label>
+                  <input
+                    type="tel"
+                    id="merchantMobile"
+                    class="form-control"
+                    placeholder="e.g: 01XXXXXXXX"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-md-6 col-12 mb20 pr-md-3">
+                  <label for="merchantPass">Password *</label>
+                  <input
+                    type="password"
+                    id="merchantPass"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
+                </div>
+                <div class="col-md-6 col-12 mb20">
+                  <label for="merchantPassConfirm">Confirm Password *</label>
+                  <input
+                    type="password"
+                    id="merchantPassConfirm"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
+                </div>
+              </div>
+
+              <!-- buttons -->
+              <div
+                class="signupButtonBox d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="btnMain text-md-right text-center">
+                  <input
+                    id="merchantToBusiness"
+                    class="btn px-5 py-2"
+                    type="button"
+                    value="Next"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Merchant information end -->
+
+            <!-- Business information start -->
+
+            <div id="business-info" class="form-section display-none">
+              <h3 class="signupTitle">Business information</h3>
+              <p class="subtitle">Details about your business</p>
+
+              <!-- <form> -->
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="businessName">Business Name *</label>
+                  <input
+                    type="text"
+                    id="businessName"
+                    class="form-control mr-5"
+                    placeholder="e.g Business Name"
+                  />
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="businessType">Business type *</label>
+                  <input
+                    type="text"
+                    id="businessType"
+                    class="form-control"
+                    placeholder="e.g Business type"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="businessOfficialAddress"
+                    >Official address *</label
+                  >
+                  <input
+                    type="text"
+                    id="businessOfficialAddress"
+                    class="form-control"
+                    placeholder="e.g 8/9, Mirpur-10, Dhaka-1207"
+                  />
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="businessPickUpAddress">Pick up address *</label>
+                  <input
+                    type="text"
+                    id="businessPickUpAddress"
+                    class="form-control"
+                    placeholder="e.g 15, Shukrabad, Dhaka"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="businessWebsite">Website</label>
+                  <input
+                    type="url"
+                    id="businessWebsite"
+                    class="form-control"
+                    placeholder="e.g www.something.com"
+                  />
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="businessFB">Facebook page *</label>
+                  <input
+                    type="url"
+                    id="businessFB"
+                    class="form-control"
+                    placeholder="e.g  www.facebook.com/NewBusiness"
+                  />
+                </div>
+              </div>
+
+              <!-- buttons -->
+              <div
+                class="signupButtonBox d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="mr-1 text-md-right text-center">
+                  <input
+                    id="businessToMerchantBack"
+                    class="btn button-back px-5 py-2"
+                    type="button"
+                    value="Back"
+                  />
+                </div>
+                <div class="btnMain text-md-right text-center">
+                  <input
+                    id="businessToContact"
+                    class="btn px-5 py-2"
+                    type="button"
+                    value="Next"
+                  />
+                </div>
+              </div>
+              <!-- </form> -->
+            </div>
+
+            <!-- Business information end -->
+
+            <div id="contact-info" class="form-section display-none">
+              <h3 class="signupTitle">Contact person detail</h3>
+              <p class="subtitle">Details about Contact person</p>
+
+              <!-- <form> -->
+              <div class="form-group mb20">
+                <label for="contactFullName">Full name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="contactFullName"
+                  placeholder="e.g: Full name"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="contactMobile">Mobile number *</label>
+                  <input
+                    type="tel"
+                    id="contactMobile"
+                    class="form-control"
+                    placeholder="e.g: 01XXXXXXXX"
+                  />
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="contactEmail">Email address *</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    class="form-control"
+                    placeholder="e.g: user@email.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactPersonInfo">Information</label>
+                <textarea
+                  type="text"
+                  class="form-control regContactPersonInfo"
+                  id="contactPersonInfo"
+                  rows="2"
+                ></textarea>
+              </div>
+
+              <div class="condition-row mt-3">
+                <input type="checkbox" name="check-me" />
+                <label for="check-me"
+                  >Accept Our <a href="#">Terms &amp; Conditions</a></label
+                >
+              </div>
+
+              <!-- buttons -->
+              <div
+                class="signupButtonBox submit-btn d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="mr-1 text-md-right text-center">
+                  <input
+                    id="contactToBusinessBack"
+                    class="btn button-back px-5 py-2"
+                    type="button"
+                    value="Back"
+                  />
+                </div>
+
+                <div class="btnMain text-md-right text-center">
+                  <input
+                    class="btn px-5 py-2"
+                    id="submitInputs"
+                    type="submit"
+                    value="Finish"
+                  />
+                </div>
+              </div>
+              <!-- </form> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mainbox bike-position">
+      <div class="bike-box">
+        <div class="bike-area">
+          <!-- <img class="bike-bg" src="https://i.imgur.com/l3gtWKc.png" alt="" /> -->
+          <img class="bike-bg" src="assets/images/Background.png" alt="" />
+          <!-- src="https://i.imgur.com/APA7Iyq.png" -->
+          <img
+            id="bike"
+            class="bike-bike"
+            src="assets/images/Bike.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script> -->
+  </body>
+</html>

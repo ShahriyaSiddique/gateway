@@ -93,8 +93,8 @@
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ </a>
             </li>
-
-            <li class="nav-item d-flex align-items-center ml-3 bg-red">
+            <!-- Remove: ml-3 -->
+            <li class="nav-item d-flex align-items-center bg-red">
               <a class="nav-link" href="#">Logout </a>
               <span class="material-icons">login</span>
             </li>
@@ -106,14 +106,17 @@
 
     <!-- image section Start-->
 
+    <!-- Change: .jpg -->
+
     <section class="contactImg">
-      <img src="assets/images/contactHeaserImg.png" alt="" />
+      <img src="assets/images/contactHeaserImg.jpg" alt="" />
     </section>
 
     <section class="contactFormWithMap">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-7">
+          <!-- Added: order-md-1 order-2 -->
+          <div class="col-12 col-sm-12 col-md-7 order-md-1 order-2">
             <div class="mapAddress">
               <div class="map" id="mapId"></div>
               <div class="officeAddress">
@@ -132,8 +135,13 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
-            <div class="contactForm">
+          <!-- Added: order-md-1 order-2 -->
+
+          <div
+            class="col-12 col-sm-12 col-md-5 d-flex justify-content-center order-md-2 order-1"
+          >
+            <!-- Added: container-fluid px-lg-5 -->
+            <div class="contactForm container-fluid px-lg-5">
               <h3 class="getInTouchTitle pb-3">Get in touch</h3>
               <div class="getInTouchSubtitle pb-2">
                 <p class="subtitle">Have an query or some feedback for us?</p>
@@ -163,16 +171,6 @@
                   </select>
                 </div>
 
-                <!-- <div class="form-group">
-                  <label for="getInTouchPurposeId">Purpose</label>
-                  <input
-                    type="select"
-                    class="form-control getInTouchPurpose"
-                    id="getInTouchPurposeId"
-                    placeholder="Service details"
-                  />
-                </div> -->
-
                 <div class="form-group">
                   <label for="getInTouchEmailId">Email Address</label>
                   <input
@@ -182,6 +180,8 @@
                     placeholder="user@email.com"
                   />
                 </div>
+
+                <!-- Change: Rows="3" -->
 
                 <div class="form-group ml-auto">
                   <label for="getInTouchInfoId">Information</label>
