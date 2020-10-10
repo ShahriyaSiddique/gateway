@@ -38,70 +38,7 @@
     <title>Mercent Registration!</title>
   </head>
   <body>
-    <!-- NavBar Section start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="nav-container container">
-        <a class="navbar-brand" href="#"
-          ><img src="assets/images/logo.png" class="navBarLogo" alt=""
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Order List </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Booking </a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tickets </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ </a>
-            </li>
-
-            <li class="nav-item d-flex align-items-center ml-3 bg-red">
-              <a class="nav-link" href="#">Logout </a>
-              <span class="material-icons">login</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- NavBar Section end -->
+    <div id="nav-id"></div>
 
     <section class="container-fluid">
       <div class="row">
@@ -115,13 +52,18 @@
         </div> -->
         <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center">
           <div class="progress-container">
-            <div class="progress-name d-flex justify-content-between">
-              <p>Merchant Details</p>
-              <p>Business Details</p>
-              <p>Contact Details</p>
+            <div class="progress-box d-flex justify-content-between">
+              <!-- <div id="progress" class="progress-progress"></div> -->
+              <span class="dot" id="dot1">1</span>
+              <hr />
+              <span class="dot" id="dot2">2</span>
+              <hr />
+              <span class="dot" id="dot3">3</span>
             </div>
-            <div class="progress-frame">
-              <div id="progress" class="progress-progress"></div>
+            <div class="progress-name d-flex justify-content-between">
+              <p id="title1">Merchant Details</p>
+              <p id="title2">Business Details</p>
+              <p id="title3">Contact Details</p>
             </div>
           </div>
         </div>
@@ -134,7 +76,7 @@
           class="form-container container col-12 col-sm-12 col-md-12 d-flex justify-content-center mt-5"
         >
           <!-- Merchant information start -->
-          <form action="">
+          <form action="" id="signUpForm">
             <div id="marchent-info" class="form-section">
               <h3 class="signupTitle">Merchant information</h3>
               <p class="subtitle">Details about you</p>
@@ -145,7 +87,7 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="merchantName"
+                    id="Name"
                     placeholder="e.g: Full Name"
                   />
                 </div>
@@ -154,7 +96,7 @@
                   <label for="merchantNid">National ID *</label>
                   <input
                     type="text"
-                    id="merchantNid"
+                    id="Nid"
                     class="form-control mr-5"
                     placeholder="e.g: XXXXXXXXXX"
                   />
@@ -166,7 +108,7 @@
                   <label for="merchantEmail">Email address *</label>
                   <input
                     type="email"
-                    id="merchantEmail"
+                    id="Email"
                     class="form-control"
                     placeholder="e.g: user@email.com"
                   />
@@ -176,7 +118,7 @@
                   <label for="merchantMobile">Mobile number *</label>
                   <input
                     type="tel"
-                    id="merchantMobile"
+                    id="Mobile"
                     class="form-control"
                     placeholder="e.g: 01XXXXXXXX"
                   />
@@ -188,7 +130,7 @@
                   <label for="merchantPass">Password *</label>
                   <input
                     type="password"
-                    id="merchantPass"
+                    id="Pass"
                     class="form-control"
                     placeholder="e.g: AwC2855ty"
                   />
@@ -197,7 +139,7 @@
                   <label for="merchantPassConfirm">Confirm Password *</label>
                   <input
                     type="password"
-                    id="merchantPassConfirm"
+                    id="PassConfirm"
                     class="form-control"
                     placeholder="e.g: AwC2855ty"
                   />
@@ -255,7 +197,7 @@
                   >
                   <input
                     type="text"
-                    id="businessOfficialAddress"
+                    id="OfficialAddress"
                     class="form-control"
                     placeholder="e.g 8/9, Mirpur-10, Dhaka-1207"
                   />
@@ -264,7 +206,7 @@
                   <label for="businessPickUpAddress">Pick up address *</label>
                   <input
                     type="text"
-                    id="businessPickUpAddress"
+                    id="PickUpAddress"
                     class="form-control"
                     placeholder="e.g 15, Shukrabad, Dhaka"
                   />
@@ -276,7 +218,7 @@
                   <label for="businessWebsite">Website</label>
                   <input
                     type="url"
-                    id="businessWebsite"
+                    id="Website"
                     class="form-control"
                     placeholder="e.g www.something.com"
                   />
@@ -285,7 +227,7 @@
                   <label for="businessFB">Facebook page *</label>
                   <input
                     type="url"
-                    id="businessFB"
+                    id="FB"
                     class="form-control"
                     placeholder="e.g  www.facebook.com/NewBusiness"
                   />
@@ -328,7 +270,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  id="contactFullName"
+                  id="contactName"
                   placeholder="e.g: Full name"
                 />
               </div>
@@ -359,7 +301,7 @@
                 <textarea
                   type="text"
                   class="form-control regContactPersonInfo"
-                  id="contactPersonInfo"
+                  id="contactInfo"
                   rows="2"
                 ></textarea>
               </div>
@@ -400,21 +342,27 @@
       </div>
     </section>
 
-    <section class="mainbox bike-position">
-      <div class="bike-box">
-        <div class="bike-area">
-          <!-- <img class="bike-bg" src="https://i.imgur.com/l3gtWKc.png" alt="" /> -->
-          <img class="bike-bg" src="assets/images/Background.png" alt="" />
-          <!-- src="https://i.imgur.com/APA7Iyq.png" -->
+    <section class="container-fluid mb-4">
+      <div class="row d-flex align-items-center">
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
           <img
-            id="bike"
-            class="bike-bike"
-            src="assets/images/Bike.png"
+            src="assets/images/footerImg.png"
+            class="container-fluid"
             alt=""
           />
         </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+          <div class="social-link-container d-flex justify-content-center">
+            <a href="#" class="fa fa-facebook"></a>
+
+            <a href="#" class="fa fa-google"></a>
+
+            <a href="#" class="fa fa-linkedin"></a>
+          </div>
+        </div>
       </div>
     </section>
+    <div id="footer-id"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -436,6 +384,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="assets/js/custom.js"></script>
+
+    <script>
+      $(function () {
+        $("#nav-id").load("nav.html");
+        $("#footer-id").load("footer.html");
+      });
+    </script>
 
     <!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script> -->

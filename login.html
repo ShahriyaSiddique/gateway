@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0ba748931a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="assets/css/login.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>HOMEX login</title>
+  </head>
+  <body>
+    <div
+      class="container-fluid main-container d-flex flex-column justify-content-center"
+    >
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-sm-11 col-md-9 col-lg-6 col-xl-4 px-4">
+          <div class="login-container">
+            <div class="logo-container text-center">
+              <img class="loginLogo" src="assets/images/logo.png" alt="" />
+            </div>
+            <div class="login-form-container">
+              <div class="login_title"><h3>Log in</h3></div>
+              <p class="login-sub-title">Welcome to HomEx Merchant Portal</p>
+
+              <form>
+                <div class="form-group">
+                  <label for="inputEmailOrPhone">Email or Phone Number</label>
+                  <div class="input-group mb-2 border-all">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text border-none transparent">
+                        <span class="material-icons"> mail_outline </span>
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control border-none login"
+                      id="inputEmailOrPhone"
+                      placeholder="e.g. admin@homex.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="InputPassword">Password</label>
+                  <div class="input-group mb-2 border-all">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text border-none transparent">
+                        <span class="material-icons-outlined"> https </span>
+                      </div>
+                    </div>
+                    <input
+                      type="password"
+                      class="form-control border-none login"
+                      id="InputPassword"
+                      placeholder="e.g. homexPass"
+                    />
+                    <div id="visibility_off" class="input-group-prepend">
+                      <div class="input-group-text border-none transparent">
+                        <span class="material-icons-outlined">
+                          visibility_off
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="form-check mb-2">
+                    <label class="form-check-label" for="autoSizingCheck">
+                      Keep me signed in
+                    </label>
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="autoSizingCheck"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit" class="login_btn btn btn-block mb-2">
+                    Log in
+                  </button>
+                </div>
+              </form>
+              <div class="signup-or-forgotPass d-flex justify-content-between">
+                <p><a href="#">Not a member? Sign up</a></p>
+                <p class="text-right"><a href="#">Forgot my password</a></p>
+              </div>
+              <div class="info d-flex justify-content-between">
+                <div class="copyright">
+                  <p>Copyright 2020 &copy; www.homex.com.bd</p>
+                </div>
+                <div class="social-link-container d-flex">
+                  <a href="#" class="fa fa-facebook"></a>
+
+                  <a href="#" class="fa fa-google"></a>
+
+                  <a href="#" class="fa fa-linkedin"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timeDateContainer">
+        <div id="timeContainer"></div>
+        <div id="dateContainer"></div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.9.1/dayjs.min.js"
+      integrity="sha512-u7elBfdMr+7LhU4rvUk3IM28QZDKTyUxba4Nx2IJ1W9cj4shfRSPq7EZXD2ULD9cBoizw2FQyeR6YBog6LcnHg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

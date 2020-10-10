@@ -19,6 +19,10 @@ label {
   box-shadow: none;
   border: 1px solid #00c4b1;
 }
+.inputError {
+  outline: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.322) !important;
+}
 
 input[type="text"],
 input[type="url"],
@@ -28,7 +32,7 @@ input[type="tel"],
 select {
   font-size: 13px !important;
   height: 40px !important;
-  background-color: #eaf3fb !important;
+  background-color: #eaf3fb;
 }
 
 textarea {
@@ -171,6 +175,42 @@ a.dropdown-item {
   align-items: center;
 }
 
+.progress-box {
+  margin: 0px 45px;
+}
+
+.progress-box hr {
+  width: 35%;
+  height: 1px;
+  border-width: 0;
+  background-color: #d6d6d6;
+}
+
+#dot1 {
+  background-color: #02a69c;
+}
+
+#dot2,
+#dot3 {
+  background-color: #f3f3f3;
+}
+
+.dot {
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  /* background-color: #02a69c; */
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#title2,
+#title3 {
+  color: #f3f3f3;
+}
+
 .progress-progress {
   width: 3%;
   height: 16px;
@@ -191,22 +231,12 @@ label {
   font-weight: 550;
 }
 
-input[type="text"],
-input[type="url"],
-input[type="email"],
-input[type="password"],
-input[type="tel"],
-textarea,
-select {
-  font-size: 13px !important;
-  height: 50px !important;
-}
 .submit-btn {
   margin-top: -26px;
 }
 
 .regContactPersonInfo {
-  height: 50px !important;
+  height: 40px !important;
 }
 
 .form-section {
@@ -243,6 +273,10 @@ select {
 .condition-row a {
   text-decoration: none;
   color: black;
+}
+
+.condition-row a:hover {
+  color: #00c4b1;
 }
 
 .signupButtonBox {
@@ -500,6 +534,38 @@ select {
   }
 }
 
+.fa {
+  padding: 7px;
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-weight: normal;
+  color: white;
+}
+
+.fa:last-child {
+  margin-right: 0;
+}
+.fa-facebook {
+  background: #3b5998;
+}
+
+.fa-google {
+  background: #dd4b39;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+
+.social-link-container a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
 @media (max-width: 1050px) {
   /* .logo {
     margin: 25px 0;
@@ -509,8 +575,11 @@ select {
     margin-top: 50px;
     margin-left: 0;
   }
+
+  /* change in homex */
+
   .form-section {
-    width: 70vw;
+    width: 75vw;
   }
   .bike-box {
     margin-bottom: 20px;
@@ -520,6 +589,10 @@ select {
 @media (max-width: 375px) {
   .progress-name {
     font-size: 11px;
+    text-align: center;
+  }
+  .progress-box {
+    margin: 0px 30px;
   }
 }
 
@@ -556,6 +629,183 @@ select {
 }
 
 /* reg css end */
+
+/* login start */
+
+.main-container {
+  height: 100vh;
+  width: auto;
+  /* from local storage */
+  background-image: url("/assets/images/background.png");
+  /* From cdn */
+  /* background-image: url("https://i.imgur.com/oCPJqU0.png"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.login-container {
+  /* height: 85vh; */
+  /* width: 60vh; */
+  /* width: 30vw; */
+  background-color: aqua;
+  box-shadow: 2px 2px 20px -11px #58585852;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.loginLogo {
+  margin-top: 25px;
+  width: 168px;
+}
+.login-form-container {
+  width: 100%;
+  padding: 15px 50px;
+  height: auto;
+}
+.login_title {
+  margin-top: 20px;
+  color: #00c4b1;
+}
+.login_title h3 {
+  font-size: 27px;
+  font-weight: bold;
+}
+.login-sub-title {
+  font-size: 12px;
+  color: #383838a1;
+  margin-top: 8px;
+  letter-spacing: -0.1px;
+}
+
+.material-icons-outlined,
+.material-icons {
+  font-size: 20px;
+}
+
+/* .form-group label {
+  font-size: 12px;
+  font-weight: normal;
+} */
+.transparent {
+  background-color: #eaf3fb !important;
+  box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.075);
+}
+.border-none {
+  border: none !important;
+  box-shadow: inset 0px 1px 0 rgba(0, 0, 0, 0.075);
+}
+.border-all {
+  border: solid 1px #b5b5b5;
+}
+
+.border-all:focus-within {
+  border: 2px solid #00c4b1;
+}
+
+#visibility_off {
+  margin-right: 0;
+  /* background: #00c4b1 !important; */
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #00c4b1;
+}
+
+/* .form-control:focus .login {
+  box-shadow: none !important;
+}
+.form-control .login {
+  padding: 0;
+} */
+
+.login:focus {
+  box-shadow: none !important;
+}
+.login {
+  padding: 0;
+}
+
+.form-check {
+  padding-left: 0 !important;
+}
+
+input[type="checkbox"] {
+  margin-left: 10px;
+}
+.login_btn {
+  background-color: #00c4b1;
+  color: white;
+  padding: 10px 0px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.login_btn:hover {
+  background-color: #00c4b1;
+  color: white;
+}
+
+.signup-or-forgotPass a {
+  color: #00c4b1;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.6rem;
+  font-style: italic;
+  color: #383838a1;
+}
+.timeDateContainer {
+  padding: 0 30px;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+#timeContainer {
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+}
+#dateContainer {
+  font-size: 16px;
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  /* .login-container {
+    width: 40vw;
+  } */
+}
+
+@media (max-width: 550px) {
+  .login-form-container {
+    padding: 15px 15px;
+  }
+
+  .timeDateContainer {
+    display: none;
+  }
+
+  /* .login-container {
+    width: 90vw;
+  } */
+}
+
+@media (max-width: 320px) {
+  .copyright {
+    font-size: 0.52rem;
+  }
+
+  .signup-or-forgotPass {
+    font-size: 0.625rem;
+  }
+}
+
+/* login css end */
 
 /* contact css start */
 
@@ -621,7 +871,7 @@ h3.getInTouchTitle.pb-3 {
   .subOffice h3,
   .headOffice p,
   .subOffice p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .contactFormWithMap {
     margin: 0;
@@ -641,6 +891,11 @@ h3.getInTouchTitle.pb-3 {
   font-size: 14px;
   font-weight: 550;
   margin-bottom: 24px;
+}
+
+.socialInfo p {
+  font-size: 13px;
+  text-align: center;
 }
 
 .footer p,
@@ -686,3 +941,296 @@ h3.getInTouchTitle.pb-3 {
   line-height: 2;
 }
 /* footer section end*/
+
+/* home start */
+
+.carousel-item {
+  background: linear-gradient(180deg, #f5fafe 60%, #03a79d 60%);
+}
+
+.carousel-item h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #24231f;
+  font-weight: 400;
+}
+
+.carousel-item p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #656565;
+  font-weight: 400;
+}
+
+.trackInput {
+  max-width: 517px;
+  height: 52px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #ffffff;
+}
+
+.trackBtn {
+  max-width: 137px;
+  height: 40px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #03a79d;
+  color: white;
+}
+
+.carousel-indicators > li {
+  width: 5px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.whyGatewayReasons .row {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+.img-man {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.whyGatewayTittle h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #03a79d;
+  font-weight: 400;
+}
+.whyGatewayTittle h2 {
+  font-size: 28px;
+  letter-spacing: 0px;
+  line-height: 37px;
+  color: #24231f;
+  font-weight: 300;
+}
+.whyGatewayTittle p {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #656565;
+  font-weight: 400;
+}
+.vehicleImg img {
+  opacity: 0.13;
+}
+
+.whyGatewayReasons {
+  background-color: #03a79d;
+}
+.whyGatewayReasons h1 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.whyGatewayReasons p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.whyGatewayReasons .iconBox {
+  width: auto;
+  height: 70px;
+}
+
+.services {
+  background-color: #f5fafe;
+}
+.services h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #03a79d;
+  font-weight: 400;
+}
+.services p {
+  font-size: 28px;
+  letter-spacing: 0px;
+  line-height: 37px;
+  color: #24231f;
+  font-weight: 300;
+}
+
+.card img {
+  clip-path: circle(130.8% at 26% -89%);
+  /* clip-path: circle(72.8% at 44% -5%); */
+  /* clip-path: circle(71.8% at 41% 1%); */
+}
+.card-columns .card {
+  margin-bottom: 1.75rem;
+}
+.card-body {
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+.card-title {
+  font-size: 1.125rem;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #24231f;
+  font-weight: 700;
+}
+p.card-text {
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #656565;
+  font-weight: 400;
+}
+.aboutUs {
+  position: relative;
+}
+
+.aboutUs .firstDiv,
+.aboutUs .secondDiv,
+.aboutUs .thirdDiv {
+  padding: 20px;
+}
+
+.aboutUs h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #03a79d;
+  font-weight: 500;
+}
+.aboutUs p {
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #656565;
+  font-weight: 400;
+}
+.aboutUs a {
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: #03a79d;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.aboutUs .box1,
+.aboutUs .box2,
+.aboutUs .box3 {
+  width: 226px;
+  height: 110px;
+  padding: 20px;
+}
+.aboutUs .box1 {
+  background-color: #03a79d;
+}
+
+.aboutUs .box2 {
+  background-color: #2bc9c0;
+}
+.aboutUs .box3 {
+  background-color: #24231f;
+}
+
+.aboutUs .box1 h2,
+.aboutUs .box2 h2,
+.aboutUs .box3 h2 {
+  font-size: 1.375rem;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.aboutUs .box1 p,
+.aboutUs .box2 p,
+.aboutUs .box3 p {
+  font-size: 1.125rem;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.aboutUs .manImg {
+  width: 100%;
+  height: 460px;
+}
+.beMerchant {
+  padding: 100px 0px;
+  background: #f5fafe;
+  position: relative;
+}
+.beMerchant h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #03a79d;
+  font-weight: 400;
+}
+.beMerchant p {
+  font-size: 25px;
+  letter-spacing: 0px;
+  line-height: 37px;
+  color: #24231f;
+  font-weight: 300;
+}
+
+.deliveryBikeImg img {
+  width: auto;
+  height: 500px;
+}
+.deliveryBikeImg {
+  position: absolute;
+  top: -70px;
+  right: 0;
+}
+.clients {
+  padding: 50px 0;
+}
+
+.clients h1 {
+  font-size: 1.9375rem;
+  letter-spacing: 0px;
+  line-height: 41px;
+  color: #03a79d;
+  font-weight: 500;
+}
+
+.clients img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+  padding: 20px;
+}
+.clients img:hover {
+  filter: none;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    column-gap: 2rem;
+  }
+  .carousel-item {
+    background: linear-gradient(90deg, #f5fafe 48%, #03a79d 47%);
+  }
+  .beMerchant {
+    background: linear-gradient(90deg, #f5fafe 72%, #ffffff 28%);
+  }
+  .aboutUs .firstDiv,
+  .aboutUs .secondDiv,
+  .aboutUs .thirdDiv {
+    padding: 100px 0;
+  }
+  .aboutUs .manImg {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+}
+@media (max-width: 377px) {
+  .carousel-item {
+    background: linear-gradient(180deg, #f5fafe 65%, #03a79d 60%);
+  }
+}
+
+/* home end */
