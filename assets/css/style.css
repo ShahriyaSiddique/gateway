@@ -955,6 +955,9 @@ h3.getInTouchTitle.pb-3 {
   color: #24231f;
   font-weight: 400;
 }
+.carousel-item h1 span {
+  color: #03a79d;
+}
 
 .carousel-item p {
   font-size: 16px;
@@ -1053,7 +1056,7 @@ h3.getInTouchTitle.pb-3 {
   color: #03a79d;
   font-weight: 400;
 }
-.services p {
+.services h2 {
   font-size: 28px;
   letter-spacing: 0px;
   line-height: 37px;
@@ -1155,16 +1158,17 @@ p.card-text {
   font-weight: 400;
 }
 
-.aboutUs .manImg {
-  width: 100%;
-  height: 100%;
+.aboutUs .aboutUsImg {
+  position: relative;
+}
+.aboutUsImgContainer {
   position: absolute;
-  top: 0;
-  right: 20px;
+  bottom: 0;
+  right: 0;
 }
 
-.aboutUs .manImg img {
-  height: 100%;
+.aboutUs .aboutUsImg img {
+  width: 80%;
 }
 .beMerchant {
   padding: 100px 0px;
@@ -1178,7 +1182,7 @@ p.card-text {
   color: #03a79d;
   font-weight: 400;
 }
-.beMerchant p {
+.beMerchant h2 {
   font-size: 25px;
   letter-spacing: 0px;
   line-height: 37px;
@@ -1186,14 +1190,16 @@ p.card-text {
   font-weight: 300;
 }
 
-.deliveryBikeImg img {
-  width: auto;
-  height: 500px;
+.beMerchantImg img {
+  width: 110%;
 }
-.deliveryBikeImg {
+.beMerchantImg {
+  position: relative;
+}
+.beMerchantImgContainer {
   position: absolute;
-  top: -70px;
-  right: 0;
+  top: -27px;
+  right: 132px;
 }
 .clients {
   padding: 50px 0;
@@ -1248,19 +1254,230 @@ p.card-text {
   .aboutUs .box3 p {
     font-size: 1.125rem;
   }
-
-  .aboutUs .manImg {
-    position: absolute;
-    top: 0;
-    right: 50px;
-  }
-  .aboutUs .manImg img {
-    height: auto;
-  }
 }
 @media (max-width: 377px) {
   .carousel-item {
     background: linear-gradient(180deg, #f5fafe 65%, #03a79d 60%);
+  }
+}
+
+@media (min-width: 768px) {
+  .whyGatewayTittle h1 {
+    font-size: 1.5rem;
+  }
+  .whyGatewayTittle h2 {
+    font-size: 1.375rem;
+  }
+  .whyGatewayTittle p {
+    font-size: 0.75rem;
+  }
+
+  .services h1 {
+    font-size: 1.5rem;
+  }
+  .services h2 {
+    font-size: 1.375rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 1.5rem;
+  }
+
+  .aboutUs .firstDiv,
+  .aboutUs .secondDiv,
+  .aboutUs .thirdDiv {
+    padding: 20px 0;
+  }
+  .beMerchant {
+    background: linear-gradient(90deg, #f5fafe 80%, #ffffff 28%);
+  }
+  .beMerchantImgContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .beMerchantImg img {
+    width: 100%;
+  }
+  .beMerchant h1 {
+    font-size: 1.5rem;
+  }
+  .beMerchant h2 {
+    font-size: 1.375rem;
+  }
+
+  .clients h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .whyGatewayTittle h1 {
+    font-size: 1.9375rem;
+  }
+  .whyGatewayTittle h2 {
+    font-size: 1.75rem;
+  }
+  .whyGatewayTittle p {
+    font-size: 1rem;
+  }
+
+  .whyGatewayReasons h1 {
+    font-size: 0.95rem;
+  }
+  .whyGatewayReasons p {
+    font-size: 0.75rem;
+  }
+  .services h1 {
+    font-size: 1.9375rem;
+  }
+  .services h2 {
+    font-size: 1.75rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 1.9375rem;
+  }
+
+  .aboutUs .firstDiv,
+  .aboutUs .secondDiv,
+  .aboutUs .thirdDiv {
+    padding: 100px 0;
+  }
+
+  .imgManContainer img {
+    width: 90%;
+  }
+  .aboutUs .box1,
+  .aboutUs .box2,
+  .aboutUs .box3 {
+    width: 190px;
+    height: 100px;
+    padding: 21px;
+  }
+
+  .aboutUs .box1 h2,
+  .aboutUs .box2 h2,
+  .aboutUs .box3 h2 {
+    font-size: 1rem;
+  }
+  .aboutUs .box1 p,
+  .aboutUs .box2 p,
+  .aboutUs .box3 p {
+    font-size: 1rem;
+  }
+  .aboutUs .aboutUsImg img {
+    width: 90%;
+  }
+  .aboutUsImgContainer {
+    bottom: -30px;
+  }
+  .beMerchantImgContainer {
+    position: absolute;
+    top: -27px;
+    right: 132px;
+  }
+  .beMerchant {
+    background: linear-gradient(90deg, #f5fafe 72%, #ffffff 28%);
+  }
+  .beMerchant h1 {
+    font-size: 1.9375rem;
+  }
+  .beMerchant h2 {
+    font-size: 1.75rem;
+  }
+  .clients h1 {
+    font-size: 1.9375rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .whyGatewayTittle h1 {
+    font-size: 1.9375rem;
+  }
+  .whyGatewayTittle h2 {
+    font-size: 1.75rem;
+  }
+  .whyGatewayTittle p {
+    font-size: 1rem;
+  }
+
+  .services h1 {
+    font-size: 1.9375rem;
+  }
+  .services h2 {
+    font-size: 1.75rem;
+  }
+
+  .aboutUs h1 {
+    font-size: 1.9375rem;
+  }
+
+  .aboutUs .firstDiv,
+  .aboutUs .secondDiv,
+  .aboutUs .thirdDiv {
+    padding: 100px 0;
+  }
+
+  .imgManContainer img {
+    width: 80%;
+  }
+  .aboutUsImgContainer {
+    bottom: -50px;
+  }
+  .aboutUs .aboutUsImg img {
+    width: 90%;
+  }
+  .aboutUs .box1,
+  .aboutUs .box2,
+  .aboutUs .box3 {
+    width: 226px;
+    height: 110px;
+    padding: 20px;
+  }
+  .aboutUs .box1 h2,
+  .aboutUs .box2 h2,
+  .aboutUs .box3 h2 {
+    font-size: 1.375rem;
+  }
+
+  .aboutUs .box1 p,
+  .aboutUs .box2 p,
+  .aboutUs .box3 p {
+    font-size: 1.125rem;
+  }
+  .beMerchantImgContainer {
+    position: absolute;
+    top: -27px;
+    right: 132px;
+  }
+  .beMerchant {
+    background: linear-gradient(90deg, #f5fafe 72%, #ffffff 28%);
+  }
+  .beMerchantImg img {
+    width: 110%;
+  }
+  .beMerchant h1 {
+    font-size: 1.9375rem;
+  }
+  .beMerchant h2 {
+    font-size: 1.75rem;
+  }
+  .clients h1 {
+    font-size: 1.9375rem;
+  }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+  .carousel-item h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-item p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  .carousel-item .trackInput {
+    width: 180px;
   }
 }
 
