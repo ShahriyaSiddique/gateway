@@ -1262,6 +1262,16 @@ p.card-text {
 }
 
 @media (min-width: 768px) {
+  .carousel-item h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-item p {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  .carousel-item .trackInput {
+    width: 180px;
+  }
   .whyGatewayTittle h1 {
     font-size: 1.5rem;
   }
@@ -1312,6 +1322,16 @@ p.card-text {
 }
 
 @media (min-width: 992px) {
+  .carousel-item h1 {
+    font-size: 1.9375rem;
+  }
+  .carousel-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .carousel-item .trackInput {
+    width: auto;
+  }
   .whyGatewayTittle h1 {
     font-size: 1.9375rem;
   }
@@ -1392,6 +1412,16 @@ p.card-text {
 }
 
 @media (min-width: 1200px) {
+  .carousel-item h1 {
+    font-size: 1.9375rem;
+  }
+  .carousel-item p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .carousel-item .trackInput {
+    width: auto;
+  }
   .whyGatewayTittle h1 {
     font-size: 1.9375rem;
   }
@@ -1465,19 +1495,6 @@ p.card-text {
   }
   .clients h1 {
     font-size: 1.9375rem;
-  }
-}
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
-  .carousel-item h1 {
-    font-size: 1.5rem;
-  }
-  .carousel-item p {
-    font-size: 0.75rem;
-    margin-bottom: 0;
-  }
-  .carousel-item .trackInput {
-    width: 180px;
   }
 }
 
